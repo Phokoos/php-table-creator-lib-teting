@@ -1,0 +1,22 @@
+{
+    "name": "table-php/table-creator",
+    "description": "Easy way to create table",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mykola Hulkovskyi",
+            "email": "hulkovskij@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "YdcTableCreator\\": "src/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

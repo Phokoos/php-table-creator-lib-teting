@@ -1,0 +1,20 @@
+{
+    "name": "mykola/testing-tables-libs",
+    "autoload": {
+        "psr-4": {
+            "Mykola\\TestingTablesLibs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Микола",
+            "email": "hulkovskij@gmail.com"
+        }
+    ],
+    "require": {
+        "table-php/table-creator": "dev-main",
+        "twbs/bootstrap": "^5.3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
