@@ -32,10 +32,13 @@ class CreateTableBootstrap implements CreateTable
 
         echo '</table>';
 
-        echo $_SERVER["REQUEST_URI"];
-        echo '<br>';
-        echo $_SERVER["PHP_SELF"];
-        echo '<br>'; echo '<br>';
+//        Part for test START
+//        echo $_SERVER["REQUEST_URI"];
+//        echo '<br>';
+//        echo $_SERVER["PHP_SELF"];
+//        echo '<br>'; echo '<br>';
+//        Part for test END
+
 
         // Render pagination
         if($tableData->pagination)

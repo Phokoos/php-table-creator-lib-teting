@@ -19,7 +19,7 @@
             use YdcTableCreator\CreateTableBootstrap;
             use YdcTableCreator\TableCreator;
             use YdcTableCreator\TableData;
-
+//
             $tableDataOne = new TableData(['Name', 'Age', 'Country'], [
                 ['John', 25, 'USA'],
                 ['Anna', 30, 'Ukraine'],
@@ -43,7 +43,7 @@
                 ['John', 25, 'USA', 'Test', 25, 'USA', 'Test'],
                 ['Anna', 30, '', 'Data', 25, 'USA', 'Test'],
                 ['Mark', 22, 'UK', '', 25, 'USA', 'Test'],
-            ], 1);
+            ], true, 2, 100, 10);
             $creatorBasic = new TableCreator(new CreateTableBasic);
             $creatorBasic->create($tableDataSecond);
             ?>

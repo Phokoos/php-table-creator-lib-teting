@@ -38,21 +38,24 @@ class CreateTableBasic implements CreateTable
              $endPage = min($totalPages, max($tableData->currentPage + ceil($visiblePages / 2) - 1, $visiblePages));
 
              echo "<nav>";
-             echo "<ul class='pagination'>";
+             echo "<ul class='ydc-pagination'>";
+
              if ($tableData->currentPage > 1)
              {
-                 echo "<li class='page-item'><a class='page-link' href='?page=1'>First</a></li>"; // "Перша" стрілка (<<)
-                 echo "<li class='page-item'><a class='page-link' href='?page=" . ($tableData->currentPage - 1) . "'>&laquo;</a></li>"; // "Попередня" стрілка (<)
+                 echo "<li class='ydc-page-item'><a class='ydc-page-link' href='?page=1'>First</a></li>";
+                 echo "<li class='ydc-page-item'><a class='ydc-page-link' href='?page=" . ($tableData->currentPage - 1) . "'>&laquo;</a></li>";
              }
+
              for($i = $startPage; $i <= $endPage; $i++)
              {
                  $activeClass = $i == $tableData->currentPage ? "active" : "";
-                 echo "<li class='page-item {$activeClass}'><a class='page-link' href='?page={$i}'>{$i}</a></li>";
+                 echo "<li class='ydc-page-item {$activeClass}'><a class='ydc-page-link' href='?page={$i}'>{$i}</a></li>";
              }
+
              if ($tableData->currentPage < $totalPages)
              {
-                 echo "<li class='page-item'><a class='page-link' href='?page=" . ($tableData->currentPage + 1) . "'>&raquo;</a></li>"; // "Наступна" стрілка (>)
-                 echo "<li class='page-item'><a class='page-link' href='?page={$totalPages}'>Last</a></li>";
+                 echo "<li class='ydc-page-item'><a class='ydc-page-link' href='?page=" . ($tableData->currentPage + 1) . "'>&raquo;</a></li>";
+                 echo "<li class='ydc-page-item'><a class='ydc-page-link' href='?page={$totalPages}'>Last</a></li>";
              }
              echo "</ul>";
              echo "</nav>";
