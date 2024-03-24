@@ -49,8 +49,6 @@
             ?>
         </div>
     </div>
-
-    <script src="vendor/table-php"></script>
 </body>
 </html>
 
